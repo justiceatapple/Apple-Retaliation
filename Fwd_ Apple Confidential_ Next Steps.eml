@@ -1,0 +1,271 @@
+Received: from pv33p00im-bulkin002.me.com ([17.142.194.247])
+ by ms98512.mac.com (Oracle Communications Messaging Server 8.0.2.5.20200127
+ 64bit (built Jan 27 2020)) with ESMTP id <0QXD00OVFX4ACV90@ms98512.mac.com>
+ for ashleygjovik@icloud.com; Thu, 05 Aug 2021 21:02:34 +0000 (GMT)
+Original-recipient: rfc822;ashleygjovik@icloud.com
+Return-path: <ashleygjovik@apple.com>
+Received: from ma1-aaemail-dr-lapp01.apple.com
+ (ma1-aaemail-dr-lapp01.apple.com [17.171.2.60])	by pv33p00im-bulkin002.me.com
+ (Postfix) with ESMTPS id 4AB7930008F	for <ashleygjovik@icloud.com>; Thu,
+ 5 Aug 2021 21:02:34 +0000 (UTC)
+Received: from pps.filterd (ma1-aaemail-dr-lapp01.apple.com [127.0.0.1])
+	by ma1-aaemail-dr-lapp01.apple.com (8.16.0.42/8.16.0.42)
+ with SMTP id 175Ks0Dq035877	for <ashleygjovik@icloud.com>; Thu,
+ 5 Aug 2021 14:02:33 -0700
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=apple.com;
+ h=content-type : content-transfer-encoding : from : mime-version : date :
+ subject : message-id : references : to; s=20180706;
+ bh=ZgXrUQoFT2v6uSaSJNtgx74UUK5DzbEgP6g7kpvi+cE=;
+ b=ewqTMq86ViPb1XZs4h21RQ7vXZWBec8EgRe+ngwU3UJCgE4yqnDD02aNF3N29BQbQvpe
+ 11p0bTtsjN+Z4nnKoQM9QKFGkc0soSOcezCZhdCg8quiq2cR2SyCZ3QbR15T6BtmzEmg
+ 7HR1DOLSKvwskrYdTlIfauflTikI3Jsqwys4xLJiTRTbkUI0QhagEOydYnLuJuZaIOQV
+ LaalTQEmHMthH26j5g0Lt74wV9v626DFHv47DO4gguTzBut3aWQ1S1LtNpy5rmuGFT8g
+ CFHUgdV3JExQIR2EAVhuYcPEVRfjWpwWujWP0j2TkFv7ROvCuNwioqM3v288+wmVU11n pQ==
+Received: from rn-mailsvcp-mta-lapp03.rno.apple.com
+ (rn-mailsvcp-mta-lapp03.rno.apple.com [10.225.203.151])
+	by ma1-aaemail-dr-lapp01.apple.com with ESMTP id 3a5563ssyt-2
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128 verify=NO)
+	for <ashleygjovik@icloud.com>; Thu, 05 Aug 2021 14:02:33 -0700
+Received: from rn-mailsvcp-mmp-lapp01.rno.apple.com
+ (rn-mailsvcp-mmp-lapp01.rno.apple.com [17.179.253.14])
+ by rn-mailsvcp-mta-lapp03.rno.apple.com
+ (Oracle Communications Messaging Server 8.1.0.9.20210415 64bit (built Apr 15
+ 2021)) with ESMTPS id <0QXD008SQX47R120@rn-mailsvcp-mta-lapp03.rno.apple.com>
+ for ashleygjovik@icloud.com; Thu, 05 Aug 2021 14:02:32 -0700 (PDT)
+Received: from process_milters-daemon.rn-mailsvcp-mmp-lapp01.rno.apple.com by
+ rn-mailsvcp-mmp-lapp01.rno.apple.com
+ (Oracle Communications Messaging Server 8.1.0.9.20210415 64bit (built Apr 15
+ 2021)) id <0QXD00H00WX14J00@rn-mailsvcp-mmp-lapp01.rno.apple.com> for
+ ashleygjovik@icloud.com; Thu, 05 Aug 2021 14:02:32 -0700 (PDT)
+X-Va-A:
+X-Va-T-CD: c381ea6ef22ed9c94efb84e1c8836b47
+X-Va-E-CD: 27e9d67fc7703a138011eac156a475d8
+X-Va-R-CD: aec5719af1fc3f30196eccb48cef073a
+X-Va-CD: 0
+X-Va-ID: fac91a9f-5cda-44c5-85ef-d7203d9cacf7
+X-V-A:
+X-V-T-CD: c381ea6ef22ed9c94efb84e1c8836b47
+X-V-E-CD: 27e9d67fc7703a138011eac156a475d8
+X-V-R-CD: aec5719af1fc3f30196eccb48cef073a
+X-V-CD: 0
+X-V-ID: b74b4a83-90fe-49ff-b72b-86d6cd951182
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10434:6.0.391,18.0.790
+ definitions=2021-08-05_10:2021-08-05,2021-08-05 signatures=0
+Received: from smtpclient.apple (unknown [10.104.1.136])
+ by rn-mailsvcp-mmp-lapp01.rno.apple.com
+ (Oracle Communications Messaging Server 8.1.0.9.20210415 64bit (built Apr 15
+ 2021)) with ESMTPSA id <0QXD00DA0X476100@rn-mailsvcp-mmp-lapp01.rno.apple.com>
+ for ashleygjovik@icloud.com; Thu, 05 Aug 2021 14:02:32 -0700 (PDT)
+Content-type: multipart/alternative;
+ boundary=Apple-Mail-3B466666-035A-4092-BD28-F11B099B6BE3
+Content-transfer-encoding: 7bit
+From: =?utf-8?Q?Ashley_Gj=C3=B8vik?= <ashleygjovik@apple.com>
+MIME-version: 1.0 (1.0)
+Date: Thu, 05 Aug 2021 14:02:31 -0700
+Subject: Fwd: Apple Confidential: Next Steps
+Message-id: <6D2FB9E5-929C-4A5F-8242-46DFFBF99F9C@apple.com>
+References: <070FFC65-8F1E-456E-BE64-B0618628EDF1@apple.com>
+To: Ashley Gjovik <ashleygjovik@icloud.com>
+X-Mailer: iPhone Mail (19A297a)
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10434:6.0.391,18.0.790
+ definitions=2021-08-05_10:2021-08-05,2021-08-05 signatures=0
+
+
+--Apple-Mail-3B466666-035A-4092-BD28-F11B099B6BE3
+Content-Type: text/plain;
+	charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+Sent from my iPhone
+
+Begin forwarded message:
+
+> From: Ekelemchi Okpo <eokpo@apple.com>
+> Date: August 5, 2021 at 9:38:39 AM PDT
+> To: Ashley Gjovik <ashleygjovik@apple.com>
+> Subject: Re: Apple Confidential: Next Steps
+>=20
+> =EF=BB=BFAshley,
+>=20
+> I=E2=80=99m disappointed about you misrepresentating our discussion.  As w=
+e discussed, and I confirmed in my follow up email, you requested and Apple a=
+greed, to have you on paid administrative leave while I look into your conce=
+rns so that you can remain out of the workplace while the investigation cont=
+inues.  We did not discuss you being on an indefinite leave.
+>=20
+> To preserve the integrity of the investigation I requested, but did not re=
+quire, that you refrain from sharing the content of our communications. As I=
+ shared, this is done in order to preserve the integrity of my investigation=
+ and to protect the privacy of your co-workers and those whom you=E2=80=99ve=
+ identified as witnesses. I did not imply, nor did we ever discuss, the remo=
+val of your access to Slack.=20
+>=20
+> If you would like to return to work and not remain on administrative leave=
+ as you requested we can make those arrangements.  I=E2=80=99ll be in touch w=
+ith you soon about the investigation.
+>=20
+>=20
+> =EF=A3=BF
+> Best,
+>=20
+> Ekelemchi Okpo
+> Corporate Employee Relations
+> eokpo@apple.com=20
+>=20
+> This email and any attachments may be privileged and may contain confident=
+ial information intended only for the recipient(s) named above. Any other di=
+stribution, forwarding, copying or disclosure of this message is strictly pr=
+ohibited. If you have received this email in error, please notify me immedia=
+tely by telephone or return email, and delete this message from your system.=
+
+>=20
+>=20
+>=20
+>> On Aug 4, 2021, at 12:53 PM, Ekelemchi Okpo <eokpo@apple.com> wrote:
+>>=20
+>> Apple Confidential
+>>=20
+>> Hi Ashley,=20
+>>=20
+>> I wanted to confirm our conversation a few minutes ago.  Per your request=
+, you are now on paid administrative leave so as to not interact with your m=
+anagers. You will receive your regular pay and benefits during this time. Yo=
+u are not expected to perform any work until the investigation is completed a=
+nd closed. I will work with your manager to set your out of office message.=20=
+
+>>=20
+>> This administrative leave ensures that you are removed from the workplace=
+, workplace interactions and contributions and your day to day roles and res=
+ponsibilities while I conduct a thorough and complete investigation into you=
+r concerns. As discussed, in order to preserve the integrity of my investiga=
+tion and to protect the privacy of your co-workers and those whom you=E2=80=99=
+ve identified as witnesses, please respect the investigation process and ref=
+rain from sharing our communications. In accordance with Apple policy, this r=
+equest doesn=E2=80=99t limit you from discussing the concerns you raised abo=
+ut your Apple experiences or that I=E2=80=99m investigating your concerns. =20=
+
+>>=20
+>> I am reviewing the issues we discussed and will send you an email by earl=
+y next week to confirm the scope of my investigation.  If you have any quest=
+ions at any time, please feel free to email me.=20
+>>=20
+>>=20
+>>=20
+>>=20
+>> =EF=A3=BF
+>> Best,
+>>=20
+>> Ekelemchi Okpo
+>> Corporate Employee Relations
+>> eokpo@apple.com=20
+>>=20
+>> This email and any attachments may be privileged and may contain confiden=
+tial information intended only for the recipient(s) named above. Any other d=
+istribution, forwarding, copying or disclosure of this message is strictly p=
+rohibited. If you have received this email in error, please notify me immedi=
+ately by telephone or return email, and delete this message from your system=
+.
+>>=20
+>>=20
+>>=20
+>=20
+
+--Apple-Mail-3B466666-035A-4092-BD28-F11B099B6BE3
+Content-Type: text/html;
+	charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta http-equiv=3D"content-type" content=3D"text/html; charset=3D=
+utf-8"></head><body dir=3D"auto"><br><br><div dir=3D"ltr">Sent from my iPhon=
+e</div><div dir=3D"ltr"><br>Begin forwarded message:<br><br></div><blockquot=
+e type=3D"cite"><div dir=3D"ltr"><b>From:</b> Ekelemchi Okpo &lt;eokpo@apple=
+.com&gt;<br><b>Date:</b> August 5, 2021 at 9:38:39 AM PDT<br><b>To:</b> Ashl=
+ey Gjovik &lt;ashleygjovik@apple.com&gt;<br><b>Subject:</b> <b>Re: Apple Con=
+fidential: Next Steps</b><br><br></div></blockquote><blockquote type=3D"cite=
+"><div dir=3D"ltr">=EF=BB=BF<meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3Dutf-8">Ashley,<br class=3D""><br class=3D"">I=E2=80=99m di=
+sappointed about you misrepresentating our discussion. &nbsp;As we discussed=
+, and I confirmed in my follow up email, you requested and Apple agreed, to h=
+ave&nbsp;you on paid administrative leave while I look into your concerns so=
+ that you can remain out of the workplace while the investigation continues.=
+ &nbsp;We did not discuss&nbsp;you being on an indefinite leave.<br class=3D=
+""><br class=3D"">To preserve the integrity of the investigation I requested=
+, but did not require, that you refrain from sharing the content of our comm=
+unications. As I shared, this is&nbsp;done in order to preserve the integrit=
+y of my investigation and to protect the privacy of your co-workers and thos=
+e whom you=E2=80=99ve identified as witnesses. I did not&nbsp;imply, nor did=
+ we ever discuss, the removal of your access to Slack.&nbsp;<br class=3D""><=
+br class=3D"">If you would like to return to work and not remain on administ=
+rative leave as you requested we can make those arrangements. &nbsp;I=E2=80=99=
+ll be in touch with you soon about&nbsp;the investigation.<div class=3D""><b=
+r class=3D""></div><div class=3D""><br class=3D""><div class=3D"">
+<div>=EF=A3=BF<br class=3D"">Best,</div><div><br class=3D"">Ekelemchi Okpo<b=
+r class=3D"">Corporate Employee Relations<br class=3D""><a href=3D"mailto:eo=
+kpo@apple.com" class=3D"">eokpo@apple.com</a>&nbsp;<br class=3D""><br class=3D=
+"">This email and any attachments may&nbsp;be privileged and may contain&nbs=
+p;confidential information&nbsp;intended only&nbsp;for the recipient(s) name=
+d above.&nbsp;Any other distribution, forwarding,&nbsp;copying or&nbsp;discl=
+osure of this&nbsp;message is strictly prohibited. If you&nbsp;have received=
+ this email in error,&nbsp;please&nbsp;notify me immediately by&nbsp;telepho=
+ne or return email, and delete&nbsp;this message from your&nbsp;system.</div=
+><div class=3D""><br class=3D""></div><br class=3D"Apple-interchange-newline=
+">
+</div>
+<div><br class=3D""><blockquote type=3D"cite" class=3D""><div class=3D"">On A=
+ug 4, 2021, at 12:53 PM, Ekelemchi Okpo &lt;<a href=3D"mailto:eokpo@apple.co=
+m" class=3D"">eokpo@apple.com</a>&gt; wrote:</div><br class=3D"Apple-interch=
+ange-newline"><div class=3D""><meta http-equiv=3D"Content-Type" content=3D"t=
+ext/html; charset=3Dutf-8" class=3D""><div style=3D"word-wrap: break-word; -=
+webkit-nbsp-mode: space; line-break: after-white-space;" class=3D""><div dir=
+=3D"auto" style=3D"word-wrap: break-word; -webkit-nbsp-mode: space; line-bre=
+ak: after-white-space;" class=3D""><div style=3D"margin: 0px; font-stretch: n=
+ormal; line-height: normal;" class=3D""><b class=3D"">Apple Confidential</b>=
+</div><div style=3D"margin: 0px; font-stretch: normal; line-height: normal; m=
+in-height: 14px;" class=3D""><br class=3D""></div><div style=3D"margin: 0px;=
+ font-stretch: normal; line-height: normal;" class=3D"">Hi Ashley,&nbsp;</di=
+v><div style=3D"margin: 0px; font-stretch: normal; line-height: normal; min-=
+height: 14px;" class=3D""><br class=3D""></div><div style=3D"margin: 0px; fo=
+nt-stretch: normal; line-height: normal;" class=3D"">I wanted to confirm our=
+ conversation a few minutes ago.&nbsp; Per your request, you are now on paid=
+ administrative leave so as to not interact with your managers. You will rec=
+eive your regular pay and benefits during this time. You are not expected to=
+ perform any work until the investigation is completed and closed. I will wo=
+rk with your manager to set your out of office message.&nbsp;</div><div styl=
+e=3D"margin: 0px; font-stretch: normal; line-height: normal; min-height: 14p=
+x;" class=3D""><br class=3D""></div><div style=3D"margin: 0px; font-stretch:=
+ normal; line-height: normal;" class=3D"">This administrative leave ensures t=
+hat you are removed from the workplace, workplace interactions and contribut=
+ions and your day to day roles and responsibilities while I conduct a thorou=
+gh and complete investigation into your concerns. As discussed, in order to p=
+reserve the integrity of my investigation and to protect the privacy of your=
+ co-workers and those whom you=E2=80=99ve identified as witnesses, please re=
+spect the investigation process and refrain from sharing our communications.=
+ In accordance with Apple policy, this request doesn=E2=80=99t limit you fro=
+m discussing the concerns you raised about your Apple experiences or that I=E2=
+=80=99m investigating your concerns. &nbsp;</div><div style=3D"margin: 0px; f=
+ont-stretch: normal; line-height: normal; min-height: 14px;" class=3D""><br c=
+lass=3D""></div><div style=3D"margin: 0px; font-stretch: normal; line-height=
+: normal;" class=3D"">I am reviewing the issues we discussed and will send y=
+ou an email by early next week to confirm the scope of my investigation.&nbs=
+p; If you have any questions at any time, please feel free to email me.&nbsp=
+;</div><div class=3D""><br class=3D""></div><div class=3D""><br class=3D""><=
+/div><div class=3D""><br class=3D""></div><div class=3D""><br class=3D""></d=
+iv><div class=3D"">
+<div class=3D"">=EF=A3=BF<br class=3D"">Best,</div><div class=3D""><br class=
+=3D"">Ekelemchi Okpo<br class=3D"">Corporate Employee Relations<br class=3D"=
+"><a href=3D"mailto:eokpo@apple.com" class=3D"">eokpo@apple.com</a>&nbsp;<br=
+ class=3D""><br class=3D"">This email and any attachments may&nbsp;be privil=
+eged and may contain&nbsp;confidential information&nbsp;intended only&nbsp;f=
+or the recipient(s) named above.&nbsp;Any other distribution, forwarding,&nb=
+sp;copying or&nbsp;disclosure of this&nbsp;message is strictly prohibited. I=
+f you&nbsp;have received this email in error,&nbsp;please&nbsp;notify me imm=
+ediately by&nbsp;telephone or return email, and delete&nbsp;this message fro=
+m your&nbsp;system.</div><div class=3D""><br class=3D""></div><br class=3D"A=
+pple-interchange-newline">
+</div>
+<br class=3D""></div></div></div></blockquote></div><br class=3D""></div></d=
+iv></blockquote></body></html>=
+
+--Apple-Mail-3B466666-035A-4092-BD28-F11B099B6BE3--

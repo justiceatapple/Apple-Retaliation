@@ -1,0 +1,416 @@
+Received: from mr11p00im-bulkin004.me.com ([17.110.69.251])
+ by ms98512.mac.com (Oracle Communications Messaging Server 8.0.2.5.20200127
+ 64bit (built Jan 27 2020)) with ESMTP id <0QWX00G6YSKM3V80@ms98512.mac.com>
+ for ashleygjovik@icloud.com; Wed, 28 Jul 2021 04:02:46 +0000 (GMT)
+Original-recipient: rfc822;ashleygjovik@icloud.com
+Return-path: <ashleygjovik@apple.com>
+Received: from rn-mailsvcp-ppex-lapp15.apple.com
+ (rn-mailsvcp-ppex-lapp15.rno.apple.com [17.179.253.34])
+	by mr11p00im-bulkin004.me.com (Postfix) with ESMTPS id 92593542A8E	for
+ <ashleygjovik@icloud.com>; Wed, 28 Jul 2021 04:02:46 +0000 (UTC)
+Received: from pps.filterd (rn-mailsvcp-ppex-lapp15.rno.apple.com [127.0.0.1])
+	by rn-mailsvcp-ppex-lapp15.rno.apple.com (8.16.1.2/8.16.1.2)
+ with SMTP id 16S42kim019135	for <ashleygjovik@icloud.com>; Tue,
+ 27 Jul 2021 21:02:46 -0700
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=apple.com; h=from :
+ content-type : mime-version : subject : message-id : references : to : date;
+ s=20180706; bh=u0rByB0SFipo6U5WD9eqDFHdPf+FQzCbBcQqju8ZAeQ=;
+ b=c1u7zoIhsLUM7zk1kTVlJFFMcI9ScKYtjJ4EFKFZoWnJncjra1jebMpBqrwNyKOyCfUJ
+ EjDdpHtwHG0NItjYa6l51m4luEkXsxskpkmj09SCIJMal5/cvJGKOGG8AKIryCKIPN8J
+ 3qHGbCBhQwvsZ2n1kBKcAe9tLpIhuQ+7xm4ckFzzuEeGdzUVhbNs+TbUXXYkoPvWdPQm
+ dbFpPSU6Jnav6PgS6PZdd3JRmi+czL5NbkICSDF64dsoNA3hAu9Puyy17VQMmId2fxIS
+ z4XpH/8rJk91SsB3pj9hVO5sOv6gG6vrmBJAQgr1v19ERWZ3U0SrBrP36o24B6udRL7H lQ==
+Received: from rn-mailsvcp-mta-lapp02.rno.apple.com
+ (rn-mailsvcp-mta-lapp02.rno.apple.com [10.225.203.150])
+	by rn-mailsvcp-ppex-lapp15.rno.apple.com with ESMTP id 3a235rtmqq-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128 verify=NO)
+	for <ashleygjovik@icloud.com>; Tue, 27 Jul 2021 21:02:46 -0700
+Received: from rn-mailsvcp-mmp-lapp02.rno.apple.com
+ (rn-mailsvcp-mmp-lapp02.rno.apple.com [17.179.253.15])
+ by rn-mailsvcp-mta-lapp02.rno.apple.com
+ (Oracle Communications Messaging Server 8.1.0.9.20210415 64bit (built Apr 15
+ 2021)) with ESMTPS id <0QWX005KCSKM7GA0@rn-mailsvcp-mta-lapp02.rno.apple.com>
+ for ashleygjovik@icloud.com; Tue, 27 Jul 2021 21:02:46 -0700 (PDT)
+Received: from process_milters-daemon.rn-mailsvcp-mmp-lapp02.rno.apple.com by
+ rn-mailsvcp-mmp-lapp02.rno.apple.com
+ (Oracle Communications Messaging Server 8.1.0.9.20210415 64bit (built Apr 15
+ 2021)) id <0QWX00M00SHN9H00@rn-mailsvcp-mmp-lapp02.rno.apple.com> for
+ ashleygjovik@icloud.com; Tue, 27 Jul 2021 21:02:46 -0700 (PDT)
+X-Va-A:
+X-Va-T-CD: c381ea6ef22ed9c94efb84e1c8836b47
+X-Va-E-CD: 1f22e7f32d06ee4e289013ab7751c701
+X-Va-R-CD: 5777189921413289303e5bf504abd8ea
+X-Va-CD: 0
+X-Va-ID: 518789f5-be91-49b6-962a-69557105e8fd
+X-V-A:
+X-V-T-CD: c381ea6ef22ed9c94efb84e1c8836b47
+X-V-E-CD: 1f22e7f32d06ee4e289013ab7751c701
+X-V-R-CD: 5777189921413289303e5bf504abd8ea
+X-V-CD: 0
+X-V-ID: 439cc2aa-9ab0-4d5f-9fec-f10929297cf1
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10434:6.0.391,18.0.790
+ definitions=2021-07-28_02:2021-07-27,2021-07-28 signatures=0
+Received: from smtpclient.apple (unknown [17.234.77.222])
+ by rn-mailsvcp-mmp-lapp02.rno.apple.com
+ (Oracle Communications Messaging Server 8.1.0.9.20210415 64bit (built Apr 15
+ 2021)) with ESMTPSA id <0QWX00E6BSKB8V00@rn-mailsvcp-mmp-lapp02.rno.apple.com>
+ for ashleygjovik@icloud.com; Tue, 27 Jul 2021 21:02:46 -0700 (PDT)
+From: Ashley Gjovik <ashleygjovik@apple.com>
+Content-type: multipart/alternative;
+ boundary="Apple-Mail=_60FC8B91-7B50-4EE0-B361-3351DA77858A"
+MIME-version: 1.0 (Mac OS X Mail 14.0 \(3654.100.0.2.22\))
+Subject: Fwd: Ashley:Ekelemchi - Notes
+Message-id: <393EFB58-6D6C-41F6-A4AB-BCC5E31B57B1@apple.com>
+References: <D5953BF0-A23B-47E1-8FC4-BF8BF6388D9C@apple.com>
+To: Ashley Gjovik <ashleygjovik@icloud.com>
+Date: Tue, 27 Jul 2021 21:02:45 -0700
+X-Mailer: Apple Mail (2.3654.100.0.2.22)
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10434:6.0.391,18.0.790
+ definitions=2021-07-28_02:2021-07-27,2021-07-28 signatures=0
+
+
+--Apple-Mail=_60FC8B91-7B50-4EE0-B361-3351DA77858A
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+	charset=utf-8
+
+
+=E2=80=94
+Ashley M. Gj=C3=B8vik
+=EF=A3=BF Engineering Program Manager
+=E2=9C=A6 Mac Systems Quality Strategic Planning & Communications=20
+=E2=9C=A6 Product Systems Quality Internal Communications; Employee =
+Engagement; Inclusion, Equity, & Diversity
+=E2=98=8E=EF=B8=8E (408) 204-9976
+
+> Begin forwarded message:
+>=20
+> From: Ashley Gjovik <ashleygjovik@apple.com>
+> Subject: Ashley:Ekelemchi - Notes
+> Date: July 27, 2021 at 9:02:34 PM PDT
+> To: Ekelemchi Okpo <eokpo@apple.com>
+> Cc: "Antonio Lagares (ER)" <alagares@apple.com>
+>=20
+> Hi Ekelemchi!
+>=20
+> It was great to talk to you again today. I=E2=80=99m capturing our =
+outstanding actions below.=20
+>=20
+> Also as mentioned, I=E2=80=99m still looking for a short-term response =
+to mitigate the current hostile work environment I'm experiencing =
+reporting to Dave and Dan and Helen. I=E2=80=99ve asked several times =
+now, including today, that all 1:1s with them be in writing only, during =
+the duration of this investigation. I also asked that there not be any =
+new projects added to my workload during the duration of this =
+investigation, and this is especially important now that my manager =
+decided to substantially increase the amount of work I need to do beyond =
+what a single role is capable of, and all unfavorable work. I would like =
+for him not to add any new work beyond what I had a month ago. I do see =
+his current actions with this workload as retaliation and a negative =
+employment action. Also, as I=E2=80=99ve mentioned, I am actively =
+suffering emotional harm as I'm continued to be exposed to their =
+behavior. I look forward to hearing about next steps on this.
+>=20
+> Further, as mentioned previously and on going, I am requesting a long =
+term solution to the hostile work environment and unsafe work =
+conditions. At this point it is clear my team will not stop the sexism, =
+harassment, discrimination, and retaliation =E2=80=94 so I need to be =
+removed from this situation. As mentioned, I refuse to quit or to take =
+medical leave as a response to the hostility; this is on Apple ER to =
+resolve, not for me to hide from. There are two options we=E2=80=99ve =
+discussed. First, a new role at Apple that is not a hostile work =
+environment and not in unsafe work conditions (and I mentioned that =
+because I will not be at Apple after Dec 31 2022, I cannot find a new =
+role to transfer to for such a short period of time, so I need your =
+assistance with placement). The 2nd option is an exit package that will =
+compensate me and provide benefits through that time. As mentioned this =
+would only be a payment & exit to mitigate the current hostile work =
+environment and unsafe work conditions and would not include any =
+litigation/arbitration waiver agreements nor any non-disclosure =
+agreements beyond what I=E2=80=99ve already signed as an employee. Any =
+further contractual agreements beyond what I=E2=80=99ve already signed =
+would need to be reviewed by my team of lawyers and the compensation for =
+each would need to be negotiated by each new specific requirement.=20
+>=20
+> Here=E2=80=99s our outstanding to dos. See you tomorrow!=20
+>=20
+> Ashley=E2=80=99s To Dos
+> Gather Jason Ivan emails for tomorrow=E2=80=99s meeting=20
+> Add the actual emails with metadata for  2016- Product Defect =
+Whistleblowing & 2016 -Retaliation and Constructive Termination #2 files=20=
+
+>=20
+> Ekelemchi To Dos
+> Set up follow up meeting tomorrow =E2=80=94 please set up for after =
+11am so I have time tomorrow morning to look for all the Jason emails.=20=
+
+>=20
+> 7/28 To Do, Remaining Folders: =
+https://apple.ent.box.com/folder/141043943461 =
+<https://apple.ent.box.com/folder/141043943461>=20
+> 2017-21 Sexist Culture in PSQ
+> 2018 - Hostile Work Env
+> 2018-21 Sexual Comments=20
+> 2019-2021 Failure to address Hostile work env
+> 2019-2021 Hostile work env=20
+> 2021 - Retaliation, IIED, Constructive Termination #3=20
+>=20
+> Cast of Characters and Complaints for 2017+
+> Dan West: Sexism, Hostile Work Env, Failure to Resolve Hostile Work =
+Env, Retaliation; failure to report work place injuries=20
+> David Powers: Sexism, Hostile Work Env, Failure to Resolve Hostile =
+Work Env, Retaliation, Labor Code violations (unsafe work conditions; =
+failure to respond to complaints about unsafe work conditions); ADA & =
+FMLA violations=20
+> Jason Ivan: Sexism, Hostile Work Env=20
+> Helen Polkes: Retaliation, Failure to Address Hostile Work Env, ADA =
+violations; failure to respond to complaints about unsafe work =
+conditions=20
+> John Basanese: Casual sexism=20
+> Reed Johnson: Casual sexism or equal opportunity a-hole, TBD
+>=20
+> Ashley:Ekelemchi=20
+> Scheduled: Jul 27, 2021 at 4:30 PM to 6:00 PM, CDT
+> Location: Virtual Conference One-Time Room
+> Invitees: Ashley Gjovik, Ekelemchi Okpo
+> ----( Virtual Conference One-Time Room )----
+> [One-Time Room]
+> =E2=80=94
+> Ashley M. Gj=C3=B8vik
+> =EF=A3=BF Engineering Program Manager
+> =E2=9C=A6 Mac Systems Quality Strategic Planning & Communications=20
+> =E2=9C=A6 Product Systems Quality Internal Communications; Employee =
+Engagement; Inclusion, Equity, & Diversity
+> =E2=98=8E=EF=B8=8E (408) 204-9976
+>=20
+
+
+--Apple-Mail=_60FC8B91-7B50-4EE0-B361-3351DA77858A
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html;
+	charset=utf-8
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; =
+charset=3Dutf-8"></head><body style=3D"word-wrap: break-word; =
+-webkit-nbsp-mode: space; line-break: after-white-space;" class=3D""><br =
+class=3D""><div class=3D"">
+<meta charset=3D"UTF-8" class=3D""><div><div style=3D"font-family: =
+&quot;Helvetica Neue&quot;;" class=3D""><span class=3D"" style=3D"color: =
+rgb(145, 145, 145);"><font face=3D"HelveticaNeue" =
+class=3D"">=E2=80=94</font></span></div><div style=3D"font-family: =
+&quot;Helvetica Neue&quot;;" class=3D""><div class=3D"" =
+style=3D"word-wrap: break-word; -webkit-nbsp-mode: space; line-break: =
+after-white-space;"><font class=3D""><font color=3D"#919191" class=3D"" =
+face=3D"HelveticaNeue"><b class=3D"">Ashley M. Gj<span class=3D"" =
+style=3D"caret-color: rgb(146, 146, 146); color: rgb(146, 146, 146); =
+font-family: &quot;Helvetica =
+Neue&quot;;">=C3=B8</span>vik</b></font></font></div><div class=3D"" =
+style=3D"word-wrap: break-word; -webkit-nbsp-mode: space; line-break: =
+after-white-space;"><font class=3D""><font color=3D"#919191" class=3D"" =
+face=3D"HelveticaNeue">=EF=A3=BF&nbsp;Engineering Program =
+Manager</font></font></div><div class=3D"" style=3D"word-wrap: =
+break-word; -webkit-nbsp-mode: space; line-break: =
+after-white-space;"><font class=3D""><font color=3D"#919191" class=3D"" =
+face=3D"HelveticaNeue">=E2=9C=A6 Mac Systems Quality Strategic Planning =
+&amp; Communications&nbsp;</font></font></div><div class=3D"" =
+style=3D"word-wrap: break-word; -webkit-nbsp-mode: space; line-break: =
+after-white-space;"><font class=3D""><font color=3D"#919191" class=3D"" =
+face=3D"HelveticaNeue">=E2=9C=A6 Product Systems =
+Quality&nbsp;</font></font><span style=3D"color: rgb(145, 145, 145); =
+font-family: HelveticaNeue;" class=3D"">Internal =
+Communications;&nbsp;</span><span style=3D"color: rgb(145, 145, 145); =
+font-family: HelveticaNeue;" class=3D"">Employee Engagement; Inclusion, =
+Equity, &amp; Diversity</span></div><div class=3D"" style=3D"word-wrap: =
+break-word; -webkit-nbsp-mode: space; line-break: =
+after-white-space;"><font class=3D""><font color=3D"#919191" class=3D"" =
+face=3D"HelveticaNeue">=E2=98=8E=EF=B8=8E (408) =
+204-9976</font></font></div></div></div>
+</div>
+
+<div style=3D""><br class=3D""><blockquote type=3D"cite" class=3D""><div =
+class=3D"">Begin forwarded message:</div><br =
+class=3D"Apple-interchange-newline"><div style=3D"margin-top: 0px; =
+margin-right: 0px; margin-bottom: 0px; margin-left: 0px;" class=3D""><span=
+ style=3D"font-family: -webkit-system-font, Helvetica Neue, Helvetica, =
+sans-serif; color:rgba(0, 0, 0, 1.0);" class=3D""><b class=3D"">From: =
+</b></span><span style=3D"font-family: -webkit-system-font, Helvetica =
+Neue, Helvetica, sans-serif;" class=3D"">Ashley Gjovik &lt;<a =
+href=3D"mailto:ashleygjovik@apple.com" =
+class=3D"">ashleygjovik@apple.com</a>&gt;<br class=3D""></span></div><div =
+style=3D"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; =
+margin-left: 0px;" class=3D""><span style=3D"font-family: =
+-webkit-system-font, Helvetica Neue, Helvetica, sans-serif; =
+color:rgba(0, 0, 0, 1.0);" class=3D""><b class=3D"">Subject: =
+</b></span><span style=3D"font-family: -webkit-system-font, Helvetica =
+Neue, Helvetica, sans-serif;" class=3D""><b class=3D"">Ashley:Ekelemchi =
+- Notes</b><br class=3D""></span></div><div style=3D"margin-top: 0px; =
+margin-right: 0px; margin-bottom: 0px; margin-left: 0px;" class=3D""><span=
+ style=3D"font-family: -webkit-system-font, Helvetica Neue, Helvetica, =
+sans-serif; color:rgba(0, 0, 0, 1.0);" class=3D""><b class=3D"">Date: =
+</b></span><span style=3D"font-family: -webkit-system-font, Helvetica =
+Neue, Helvetica, sans-serif;" class=3D"">July 27, 2021 at 9:02:34 PM =
+PDT<br class=3D""></span></div><div style=3D"margin-top: 0px; =
+margin-right: 0px; margin-bottom: 0px; margin-left: 0px;" class=3D""><span=
+ style=3D"font-family: -webkit-system-font, Helvetica Neue, Helvetica, =
+sans-serif; color:rgba(0, 0, 0, 1.0);" class=3D""><b class=3D"">To: =
+</b></span><span style=3D"font-family: -webkit-system-font, Helvetica =
+Neue, Helvetica, sans-serif;" class=3D"">Ekelemchi Okpo &lt;<a =
+href=3D"mailto:eokpo@apple.com" class=3D"">eokpo@apple.com</a>&gt;<br =
+class=3D""></span></div><div style=3D"margin-top: 0px; margin-right: =
+0px; margin-bottom: 0px; margin-left: 0px;" class=3D""><span =
+style=3D"font-family: -webkit-system-font, Helvetica Neue, Helvetica, =
+sans-serif; color:rgba(0, 0, 0, 1.0);" class=3D""><b class=3D"">Cc: =
+</b></span><span style=3D"font-family: -webkit-system-font, Helvetica =
+Neue, Helvetica, sans-serif;" class=3D"">"Antonio Lagares (ER)" &lt;<a =
+href=3D"mailto:alagares@apple.com" =
+class=3D"">alagares@apple.com</a>&gt;<br class=3D""></span></div><br =
+class=3D""><div class=3D""><meta http-equiv=3D"Content-Type" =
+content=3D"text/html; charset=3Dutf-8" class=3D""><div style=3D"word-wrap:=
+ break-word; -webkit-nbsp-mode: space; line-break: after-white-space;" =
+class=3D""><div class=3D""><div style=3D"margin: 0px; font-style: =
+normal; font-variant-caps: normal; font-weight: normal; font-stretch: =
+normal; font-size: 12px; line-height: normal; font-family: Helvetica; =
+min-height: 14px;" class=3D"">Hi Ekelemchi!</div><div class=3D""><br =
+class=3D""></div><div class=3D"">It was great to talk to you again =
+today. I=E2=80=99m capturing our outstanding actions =
+below.&nbsp;</div><div class=3D""><br class=3D""></div><div =
+class=3D"">Also as mentioned, I=E2=80=99m still looking for a short-term =
+response to mitigate the current hostile work environment I'm =
+experiencing reporting to Dave and Dan and Helen. I=E2=80=99ve asked =
+several times now, including today, that all 1:1s with them be in =
+writing only, during the duration of this investigation. I also asked =
+that there not be any new projects added to my workload during the =
+duration of this investigation, and this is especially important now =
+that my manager decided to substantially increase the amount of work I =
+need to do beyond what a single role is capable of, and all unfavorable =
+work. I would like for him not to add any new work beyond what I had a =
+month ago. I do see his current actions with this workload as =
+retaliation and a negative employment action. Also, as I=E2=80=99ve =
+mentioned, I am actively suffering emotional harm as I'm continued to be =
+exposed to their behavior. I look forward to hearing about next steps on =
+this.</div><div class=3D""><br class=3D""></div><div class=3D"">Further, =
+as mentioned previously and on going, I am requesting a long term =
+solution to the hostile work environment and unsafe work conditions. At =
+this point it is clear my team will not stop the sexism, harassment, =
+discrimination, and retaliation =E2=80=94 so I need to be removed from =
+this situation. As mentioned, I refuse to quit or to take medical leave =
+as a response to the hostility; this is on Apple ER to resolve, not for =
+me to hide from. There are two options we=E2=80=99ve discussed. First, a =
+new role at Apple that is not a hostile work environment and not in =
+unsafe work conditions (and I mentioned that because I will not be at =
+Apple after Dec 31 2022, I cannot find a new role to transfer to for =
+such a short period of time, so I need your assistance with placement). =
+The 2nd option is an exit package that will compensate me and provide =
+benefits through that time. As mentioned this would only be a payment =
+&amp; exit to mitigate the current hostile work environment and unsafe =
+work conditions and would not include any litigation/arbitration waiver =
+agreements nor any non-disclosure agreements beyond what I=E2=80=99ve =
+already signed as an employee. Any further contractual agreements beyond =
+what I=E2=80=99ve already signed would need to be reviewed by my team of =
+lawyers and the compensation for each would need to be negotiated by =
+each new specific requirement.&nbsp;</div><div class=3D""><br =
+class=3D""></div><div class=3D"">Here=E2=80=99s our outstanding to dos. =
+See you tomorrow!&nbsp;</div><div class=3D""><br class=3D""></div><div =
+class=3D""><b class=3D"">Ashley=E2=80=99s To Dos</b></div><div =
+class=3D""><ul class=3D"MailOutline"><li class=3D"">Gather Jason Ivan =
+emails for tomorrow=E2=80=99s meeting&nbsp;</li><li class=3D"">Add the =
+actual emails with metadata for &nbsp;2016- Product Defect =
+Whistleblowing &amp; 2016 -Retaliation and&nbsp;Constructive Termination =
+#2 files&nbsp;</li></ul></div><div style=3D"margin: 0px; font-style: =
+normal; font-variant-caps: normal; font-weight: normal; font-stretch: =
+normal; font-size: 12px; line-height: normal; font-family: Helvetica; =
+min-height: 14px;" class=3D""><br class=3D""></div><div style=3D"margin: =
+0px; font-style: normal; font-variant-caps: normal; font-stretch: =
+normal; font-size: 12px; line-height: normal; font-family: Helvetica; =
+min-height: 14px;" class=3D""><b class=3D"">Ekelemchi To =
+Dos</b></div><div class=3D""><ul class=3D"MailOutline"><li class=3D"">Set =
+up follow up meeting tomorrow =E2=80=94 please set up for after 11am so =
+I have time tomorrow morning to look for all the Jason =
+emails.&nbsp;</li></ul></div><div style=3D"margin: 0px; font-style: =
+normal; font-variant-caps: normal; font-weight: normal; font-stretch: =
+normal; font-size: 12px; line-height: normal; font-family: Helvetica; =
+min-height: 14px;" class=3D""><br class=3D""></div><div style=3D"margin: =
+0px; font-style: normal; font-variant-caps: normal; font-stretch: =
+normal; font-size: 12px; line-height: normal; font-family: Helvetica; =
+min-height: 14px;" class=3D""><b class=3D"">7/28 To Do, Remaining =
+Folders:</b><span style=3D"font-weight: normal;" class=3D"">&nbsp;<a =
+href=3D"https://apple.ent.box.com/folder/141043943461" =
+class=3D"">https://apple.ent.box.com/folder/141043943461</a>&nbsp;</span><=
+/div><div class=3D""><div class=3D""><ul class=3D"MailOutline"><li =
+class=3D"">2017-21 Sexist Culture in PSQ</li><li class=3D"">2018 - =
+Hostile Work Env</li><li class=3D"">2018-21 Sexual =
+Comments&nbsp;</li><li class=3D"">2019-2021 Failure to address Hostile =
+work env</li><li class=3D"">2019-2021 Hostile work env&nbsp;</li><li =
+class=3D"">2021 - Retaliation, IIED, Constructive Termination =
+#3&nbsp;</li></ul></div><div class=3D""><br class=3D""></div></div><div =
+class=3D""><b class=3D"">Cast of Characters and Complaints for =
+2017+</b></div><div class=3D""><ul class=3D"MailOutline"><li =
+class=3D"">Dan West: Sexism, Hostile Work Env, Failure to Resolve =
+Hostile Work Env,&nbsp;Retaliation; failure to report work place =
+injuries&nbsp;</li><li class=3D"">David Powers:&nbsp;Sexism, Hostile =
+Work Env, Failure to Resolve Hostile Work Env, Retaliation, Labor Code =
+violations (unsafe work conditions; failure to respond to complaints =
+about unsafe work conditions); ADA &amp; FMLA violations&nbsp;</li><li =
+class=3D"">Jason Ivan: Sexism, Hostile Work Env&nbsp;</li><li =
+class=3D"">Helen Polkes: Retaliation, Failure to Address Hostile Work =
+Env, ADA violations; failure to respond to complaints about unsafe work =
+conditions&nbsp;</li><li class=3D"">John Basanese: Casual =
+sexism&nbsp;</li><li class=3D"">Reed Johnson: Casual sexism or equal =
+opportunity a-hole, TBD</li></ul></div><div style=3D"margin: 0px; =
+font-style: normal; font-variant-caps: normal; font-weight: normal; =
+font-stretch: normal; font-size: 12px; line-height: normal; font-family: =
+Helvetica; min-height: 14px;" class=3D""><br class=3D""></div><div =
+style=3D"margin: 0px;" class=3D""><font face=3D"Helvetica Neue" size=3D"3"=
+ style=3D"font: 12.0px 'Helvetica Neue'" class=3D""><b =
+class=3D"">Ashley:Ekelemchi<span =
+class=3D"Apple-converted-space">&nbsp;</span></b></font></div><div =
+style=3D"margin: 0px;" class=3D""><font face=3D"Helvetica Neue" size=3D"3"=
+ style=3D"font: 12.0px 'Helvetica Neue'" class=3D"">Scheduled: Jul 27, =
+2021 at 4:30 PM to 6:00 PM, CDT</font></div><div style=3D"margin: 0px;" =
+class=3D""><font face=3D"Helvetica Neue" size=3D"3" style=3D"font: =
+12.0px 'Helvetica Neue'" class=3D"">Location: Virtual Conference =
+One-Time Room</font></div><div style=3D"margin: 0px;" class=3D""><font =
+face=3D"Helvetica Neue" size=3D"3" style=3D"font: 12.0px 'Helvetica =
+Neue'" class=3D"">Invitees: Ashley Gjovik, Ekelemchi =
+Okpo</font></div><div style=3D"margin: 0px;" class=3D""><font =
+face=3D"Helvetica Neue" size=3D"3" style=3D"font: 12.0px 'Helvetica =
+Neue'" class=3D"">----( Virtual Conference One-Time Room =
+)----</font></div><div style=3D"margin: 0px;" class=3D""><font =
+face=3D"Helvetica Neue" size=3D"3" style=3D"font: 12.0px 'Helvetica =
+Neue'" class=3D"">[One-Time Room]</font></div></div><div class=3D"">
+<meta charset=3D"UTF-8" class=3D""><div class=3D""><div =
+style=3D"font-family: &quot;Helvetica Neue&quot;;" class=3D""><span =
+class=3D"" style=3D"color: rgb(145, 145, 145);"><font =
+face=3D"HelveticaNeue" class=3D"">=E2=80=94</font></span></div><div =
+style=3D"font-family: &quot;Helvetica Neue&quot;;" class=3D""><div =
+class=3D"" style=3D"word-wrap: break-word; -webkit-nbsp-mode: space; =
+line-break: after-white-space;"><font class=3D""><font color=3D"#919191" =
+class=3D"" face=3D"HelveticaNeue"><b class=3D"">Ashley M. Gj<span =
+class=3D"" style=3D"caret-color: rgb(146, 146, 146); color: rgb(146, =
+146, 146); font-family: &quot;Helvetica =
+Neue&quot;;">=C3=B8</span>vik</b></font></font></div><div class=3D"" =
+style=3D"word-wrap: break-word; -webkit-nbsp-mode: space; line-break: =
+after-white-space;"><font class=3D""><font color=3D"#919191" class=3D"" =
+face=3D"HelveticaNeue">=EF=A3=BF&nbsp;Engineering Program =
+Manager</font></font></div><div class=3D"" style=3D"word-wrap: =
+break-word; -webkit-nbsp-mode: space; line-break: =
+after-white-space;"><font class=3D""><font color=3D"#919191" class=3D"" =
+face=3D"HelveticaNeue">=E2=9C=A6 Mac Systems Quality Strategic Planning =
+&amp; Communications&nbsp;</font></font></div><div class=3D"" =
+style=3D"word-wrap: break-word; -webkit-nbsp-mode: space; line-break: =
+after-white-space;"><font class=3D""><font color=3D"#919191" class=3D"" =
+face=3D"HelveticaNeue">=E2=9C=A6 Product Systems =
+Quality&nbsp;</font></font><span style=3D"color: rgb(145, 145, 145); =
+font-family: HelveticaNeue;" class=3D"">Internal =
+Communications;&nbsp;</span><span style=3D"color: rgb(145, 145, 145); =
+font-family: HelveticaNeue;" class=3D"">Employee Engagement; Inclusion, =
+Equity, &amp; Diversity</span></div><div class=3D"" style=3D"word-wrap: =
+break-word; -webkit-nbsp-mode: space; line-break: =
+after-white-space;"><font class=3D""><font color=3D"#919191" class=3D"" =
+face=3D"HelveticaNeue">=E2=98=8E=EF=B8=8E (408) =
+204-9976</font></font></div></div></div>
+</div>
+<br class=3D""></div></div></blockquote></div><br =
+class=3D""></body></html>=
+
+--Apple-Mail=_60FC8B91-7B50-4EE0-B361-3351DA77858A--
